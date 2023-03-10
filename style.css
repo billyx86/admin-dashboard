@@ -3,3 +3,23 @@
     padding: 0;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #1992D4;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
