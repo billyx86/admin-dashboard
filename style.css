@@ -79,20 +79,39 @@ body {
     margin-top: 16px;
     margin-left: 30px;
     display: grid;
-    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr 2fr;
 }
 
-.top-header {
+.header img {
+    width: 24px;
+}
+
+.top-header-left {
     display: flex;
     align-items: center;
 }
 
-.top-header input {
+.top-header-left input {
     max-height: 16px;
     width: 470px;
     background-color: #E2E8F0;
     border: none;
     padding: 6px;
     border-radius: 20px;
+}
+
+.top-header-right {
+    margin-right: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-weight: bold;
+    gap: 24px;
+    font-size: 18px;
+}
+
+.top-header-right img:first-of-type {
+    width: 48px;
+    border-radius: 100px;
 }
