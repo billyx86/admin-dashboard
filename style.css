@@ -113,6 +113,10 @@ p {
     font-size: 18px;
 }
 
+.top-header-right p {
+    color: black;
+}
+
 .top-header-right img:first-of-type {
     width: 48px;
     border-radius: 100px;
@@ -189,6 +193,7 @@ p {
     display: flex;
     flex-direction: column;
     flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .project h4 {
@@ -226,6 +231,7 @@ p {
     margin-bottom: 48px;
     width: 300px;
     gap: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .h-divider {
@@ -244,6 +250,7 @@ p {
     margin-top: 16px;
     margin-bottom: 48px;
     gap: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .trending-profile {
