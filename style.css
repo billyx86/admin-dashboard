@@ -68,7 +68,7 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-rows: 160px 1fr;
+    grid-template-rows: 180px 1fr;
 }
 
 .main-content {
@@ -79,8 +79,9 @@ body {
     margin-top: 16px;
     margin-left: 30px;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 96px auto 1fr auto;
     grid-template-rows: 1fr 2fr;
+    gap: 12px;
 }
 
 .header img {
@@ -90,6 +91,7 @@ body {
 .top-header-left {
     display: flex;
     align-items: center;
+    grid-column: 1 / span 2;
 }
 
 .top-header-left input {
@@ -114,4 +116,20 @@ body {
 .top-header-right img:first-of-type {
     width: 48px;
     border-radius: 100px;
+}
+
+.bottom-header-avatar img {
+    width: 90px;
+    border-radius: 100px;
+}
+
+.bottom-header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.bottom-header-left p {
+    font-weight: bold;
 }
