@@ -68,7 +68,7 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-rows: 180px 1fr;
+    grid-template-rows: 196px 1fr;
 }
 
 .main-content {
@@ -132,4 +132,26 @@ body {
 
 .bottom-header-left p {
     font-weight: bold;
+}
+
+.bottom-header-right {
+    margin-right: 48px;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 48px;
+    gap: 24px;
+}
+
+.bottom-header-right button {
+    background-color: #1992D4;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 42px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
 }
