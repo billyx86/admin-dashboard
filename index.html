@@ -2,48 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
+    <aside class="sidebar" aria-label="Sidebar">
         <div class="dashboard-logo">
-            <img src="assets/view-dashboard.svg" class="filter-white logo">Dashboard
+            <img src="assets/view-dashboard.svg" class="filter-white logo" alt="" aria-hidden="true">Dashboard
         </div>
         <div class="nav-bar">
-            <ul class="nav-list nav-styles">
-                <li><img src="assets/home.svg" alt="" class="simple-icon filter-white">Home</li>
-                <li><img src="assets/profile.svg" alt="" class="simple-icon filter-white">Profile</li>
-                <li><img src="assets/message-reply.svg" alt="" class="simple-icon filter-white">Messages</li>
-                <li><img src="assets/clock-time-three.svg" alt="" class="simple-icon filter-white">History</li>
-                <li><img src="assets/note-multiple.svg" alt="" class="simple-icon filter-white">Tasks</li>
-                <li><img src="assets/account-group.svg" alt="" class="simple-icon filter-white">Communities</li>
-            </ul>
+            <nav aria-label="Primary">
+                <ul class="nav-list nav-styles">
+                    <li><img src="assets/home.svg" alt="" class="simple-icon filter-white">Home</li>
+                    <li><img src="assets/profile.svg" alt="" class="simple-icon filter-white">Profile</li>
+                    <li><img src="assets/message-reply.svg" alt="" class="simple-icon filter-white">Messages</li>
+                    <li><img src="assets/clock-time-three.svg" alt="" class="simple-icon filter-white">History</li>
+                    <li><img src="assets/note-multiple.svg" alt="" class="simple-icon filter-white">Tasks</li>
+                    <li><img src="assets/account-group.svg" alt="" class="simple-icon filter-white">Communities</li>
+                </ul>
+            </nav>
         </div>
         <div class="settings-bar">
-            <ul class="settings-list nav-styles">
-                <li><img src="assets/cog.svg" alt="" class="simple-icon filter-white">Settings</li>
-                <li><img src="assets/help-box.svg" alt="" class="simple-icon filter-white">Support</li>
-                <li><img src="assets/shield-check.svg" alt="" class="simple-icon filter-white">Privacy</li>
-            </ul>
+            <nav aria-label="Settings">
+                <ul class="settings-list nav-styles">
+                    <li><img src="assets/cog.svg" alt="" class="simple-icon filter-white">Settings</li>
+                    <li><img src="assets/help-box.svg" alt="" class="simple-icon filter-white">Support</li>
+                    <li><img src="assets/shield-check.svg" alt="" class="simple-icon filter-white">Privacy</li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </aside>
     <div class="content-container">
-        <div class="header">
+        <header class="header">
             <div class="top-header-left">
-                <img src="assets/search.svg" alt="" class="simple-icon">
-                <input type="text">
+                <img src="assets/search.svg" alt="" class="simple-icon" aria-hidden="true">
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="search" id="search" name="search" placeholder="Search…">
             </div>
             <div></div>
             <div class="top-header-right">
                 <p>Michael Scott</p>
-                <img src="assets/avatar.webp" alt="">
-                <img src="assets/bell-ring-outline.svg">
+                <img src="assets/avatar.webp" alt="Michael Scott's avatar">
+                <img src="assets/bell-ring-outline.svg" alt="Notifications">
             </div>
             <div class="bottom-header-avatar">
-                <img src="assets/avatar.webp" alt="">
+                <img src="assets/avatar.webp" alt="Michael Scott's avatar">
             </div>
             <div class="bottom-header-left">
                 <p>Hi there,</p>
@@ -55,123 +59,123 @@
                 <button class="header-button">Upload</button>
                 <button class="header-button">New</button>
             </div>
-        </div>
-        
-        <div class="main-content">
-            <div class="projects">
-                <h3>Your Projects</h3>
+        </header>
+
+        <main class="main-content">
+            <section class="projects" aria-labelledby="projects-heading">
+                <h3 id="projects-heading">Your Projects</h3>
                 <div class="project-list">
-                    <div class="project">
+                    <article class="project">
                         <h4>Super Cool Project</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla justo.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project">
                         <h4>Super Cool Project</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis lobortis dolor, vel dapibus est. Fusce quis nunc at enim vehicula egestas. In.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project">
                         <h4>Super Cool Project</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra tempus sapien nec maximus. Vestibulum ac odio nisi. Suspendisse congue, eros non blandit elementum, lacus dui consequat tellus, quis volutpat.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project">
                         <h4>Super Cool Project</h4>
-                        <p>Cras arcu erat, volutpat eget massa at, imperdiet consectetur diam. Nulla mollis mi et tellus ultrices elementum.                        </p>
+                        <p>Cras arcu erat, volutpat eget massa at, imperdiet consectetur diam. Nulla mollis mi et tellus ultrices elementum.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project">
                         <h4>Super Cool Project</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla justo.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project">
                         <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla justo.</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla justo.</p>
                         <div class="project-buttons">
-                            <img src="assets/share-variant-outline.svg" alt="">
-                            <img src="assets/eye-plus-outline.svg" alt="">
-                            <img src="assets/star-plus-outline.svg" alt="">
+                            <img src="assets/share-variant-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/eye-plus-outline.svg" alt="" aria-hidden="true">
+                            <img src="assets/star-plus-outline.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
             <div class="announcements-trending">
-                <div>
-                    <h3>Announcements</h3>
+                <section aria-labelledby="announcements-heading">
+                    <h3 id="announcements-heading">Announcements</h3>
                     <div class="announcements-container">
                         <div class="announcement">
                             <h4>Site Maintenance</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla...</p>
                         </div>
-                        <div class="h-divider"></div>
+                        <div class="h-divider" aria-hidden="true"></div>
                         <div class="announcement">
                             <h4>Community Share Day</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla...</p>
                         </div>
-                        <div class="h-divider"></div>
+                        <div class="h-divider" aria-hidden="true"></div>
                         <div class="announcement">
                             <h4>Updated Privacy Policy</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla...</p>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <h3>Trending</h3>
+                </section>
+                <section aria-labelledby="trending-heading">
+                    <h3 id="trending-heading">Trending</h3>
                     <div class="trending-container">
                         <div class="trending-profile">
-                            <img src="assets/avatar.webp" alt="">
+                            <img src="assets/avatar.webp" alt="Michael Scott's avatar">
                             <div class="trend-prof-info">
                                 <h4>@michael</h4>
                                 <p>Super Cool Project</p>
                             </div>
                         </div>
                         <div class="trending-profile">
-                            <img src="https://img.freepik.com/free-vector/cute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3671.jpg" alt="">
+                            <img src="https://img.freepik.com/free-vector/cute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3671.jpg" alt="Cartoon dog">
                             <div class="trend-prof-info">
                                 <h4>@jefferson24</h4>
                                 <p>Portal But With a Machine Gun</p>
                             </div>
                         </div>
                         <div class="trending-profile">
-                            <img src="https://img.freepik.com/free-vector/cute-rabbit-bite-carrot-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-flat_138676-7366.jpg" alt="">
+                            <img src="https://img.freepik.com/free-vector/cute-rabbit-bite-carrot-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-flat_138676-7366.jpg" alt="Cartoon rabbit">
                             <div class="trend-prof-info">
                                 <h4>@georgiadev</h4>
                                 <p>Problem Deleter</p>
                             </div>
                         </div>
                         <div class="trending-profile">
-                            <img src="https://img.freepik.com/free-vector/cute-cat-with-love-sign-hand-cartoon-illustration-animal-nature-concept-isolated-flat-cartoon-style_138676-3419.jpg" alt="">
+                            <img src="https://img.freepik.com/free-vector/cute-cat-with-love-sign-hand-cartoon-illustration-animal-nature-concept-isolated-flat-cartoon-style_138676-3419.jpg" alt="Cartoon cat">
                             <div class="trend-prof-info">
                                 <h4>@xx_vinny420_xx</h4>
                                 <p>Epic Video Game</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>

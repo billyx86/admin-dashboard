@@ -17,6 +17,19 @@ p {
     color: #636363
 }
 
+/* Visually hidden but still available to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .filter-white {
     filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(38deg) brightness(103%) contrast(103%);
 }
