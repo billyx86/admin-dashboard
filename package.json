@@ -1,0 +1,11 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A static admin dashboard design built with CSS Grid.",
+  "scripts": {
+    "test": "node validate.js"
+  },
+  "license": "MIT"
+}
