@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "title": "Onboarding Flow Revamp",
+      "description": "Simplify the three-step signup into one screen. Reduces drop-off and removes the abandoned 'verify email' dead end."
+    },
+    {
+      "title": "Billing Portal",
+      "description": "Let customers update cards and download invoices without emailing support. Includes usage-based proration for mid-cycle plan changes."
+    },
+    {
+      "title": "Search Performance",
+      "description": "P95 search latency is over 2s on large datasets. Add a search index and query caching to get it under 400ms."
+    },
+    {
+      "title": "Mobile App Shell",
+      "description": "Native app scaffold with the dashboard's component set ported. Target: iOS and Android from one codebase."
+    },
+    {
+      "title": "Audit Log Export",
+      "description": "Compliance needs a one-click CSV/JSON export of admin actions with time-range and actor filters."
+    },
+    {
+      "title": "Notification Preferences",
+      "description": "Per-channel (email, in-app, push) and per-topic opt-in controls. Currently every user gets every email."
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Scheduled Maintenance",
+      "description": "We'll be performing database maintenance on Sunday 02:00–04:00 UTC. Some requests may be briefly unavailable."
+    },
+    {
+      "title": "Community Share Day",
+      "description": "This Friday we're spotlighting user-built projects. Submit yours before Thursday and you could be featured."
+    },
+    {
+      "title": "Updated Privacy Policy",
+      "description": "We updated our privacy policy to reflect new data-retention rules. Please review the changes at your convenience."
+    }
+  ],
+  "trending": [
+    {
+      "handle": "@michael",
+      "project": "Super Cool Project",
+      "avatar": "assets/avatar.webp",
+      "alt": "Michael Scott's avatar"
+    },
+    {
+      "handle": "@jefferson24",
+      "project": "Portal But With a Machine Gun",
+      "avatar": "assets/trending-pet-1.jpg",
+      "alt": "Cartoon dog"
+    },
+    {
+      "handle": "@georgiadev",
+      "project": "Problem Deleter",
+      "avatar": "assets/trending-pet-2.jpg",
+      "alt": "Cartoon rabbit"
+    },
+    {
+      "handle": "@xx_vinny420_xx",
+      "project": "Epic Video Game",
+      "avatar": "assets/trending-pet-3.jpg",
+      "alt": "Cartoon cat"
+    }
+  ]
+}
