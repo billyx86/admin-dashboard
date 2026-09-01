@@ -364,3 +364,56 @@ h1, h2, h3, h4 {
     display: block;
 }
 
+/* Data-source status pill ------------------------------------------------ */
+.data-status {
+    align-self: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--divider);
+    color: var(--text-secondary);
+    background-color: var(--card-bg);
+    white-space: nowrap;
+}
+
+.data-status[data-state="syncing"] {
+    color: var(--text-secondary);
+}
+
+.data-status[data-state="live"] {
+    color: #1f7a3d;
+    border-color: #7bc98f;
+    background-color: #e7f6ec;
+}
+
+:root[data-theme="dark"] .data-status[data-state="live"] {
+    color: #7ee0a0;
+    border-color: #2f6b45;
+    background-color: #14261b;
+}
+
+.data-status[data-state="error"] {
+    color: #a13c1f;
+    border-color: #d99a7f;
+    background-color: #fbeae2;
+}
+
+:root[data-theme="dark"] .data-status[data-state="error"] {
+    color: #f0a184;
+    border-color: #7a3d28;
+    background-color: #2c1811;
+}
+
+/* Offline / data notice banner ------------------------------------------ */
+.data-notice {
+    margin: 12px 30px 0 30px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--notice-border);
+    background-color: var(--notice-bg);
+    color: var(--notice-text);
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -59,17 +59,19 @@
             </div>
             <div></div>
             <div class="bottom-header-right">
+                <span id="data-status" class="data-status" data-state="syncing" role="status">Syncing…</span>
                 <button class="header-button">Share</button>
                 <button class="header-button">Upload</button>
                 <button class="header-button">New</button>
             </div>
         </header>
 
+        <div id="data-notice" class="data-notice" role="status" hidden></div>
 
         <main class="main-content">
             <section class="projects" aria-labelledby="projects-heading">
                 <h3 id="projects-heading">Your Projects</h3>
-                <div class="project-list">
+                <div class="project-list" id="projects-list">
                     <article class="project">
                         <h4>Super Cool Project</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla justo.</p>
@@ -129,7 +131,7 @@
             <div class="announcements-trending">
                 <section aria-labelledby="announcements-heading">
                     <h3 id="announcements-heading">Announcements</h3>
-                    <div class="announcements-container">
+                    <div class="announcements-container" id="announcements-container">
                         <div class="announcement">
                             <h4>Site Maintenance</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada dui tortor, a fringilla...</p>
@@ -148,7 +150,7 @@
                 </section>
                 <section aria-labelledby="trending-heading">
                     <h3 id="trending-heading">Trending</h3>
-                    <div class="trending-container">
+                    <div class="trending-container" id="trending-container">
                         <div class="trending-profile">
                             <img src="assets/avatar.webp" alt="Michael Scott's avatar">
                             <div class="trend-prof-info">
@@ -182,6 +184,7 @@
             </div>
         </main>
     </div>
+    <script src="data.js" defer></script>
     <script src="theme.js" defer></script>
 </body>
 </html>
