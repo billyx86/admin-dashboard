@@ -332,3 +332,35 @@ h1, h2, h3, h4 {
     justify-content: center;
     gap: 4px;
 }
+/* Theme toggle button ---------------------------------------------------
+   Sits in the header. The active glyph (sun/moon) is swapped by theme.js
+   via the `hidden` attribute; we only style the button frame here. */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid var(--divider);
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    background-color: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent);
+    outline: none;
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
